@@ -563,7 +563,7 @@ const tech = {
         allowed() {
             return !m.isAltSkin && !tech.isPiezo && !tech.isRewindAvoidDeath && !tech.isAnnihilation && !tech.isNoDeath//&& !tech.isAmmoFromHealth && !tech.isRewindGun
         },
-        requires: "not piezoelectricity, CPT, annihilation, quantum Zeno effect",
+        requires: "CPT, annihilation, quantum Zeno effect",
         damage: 1.5,
         effect() {
             m.damageDone *= this.damage
@@ -2966,7 +2966,7 @@ const tech = {
         allowed() {
             return !tech.isEnergyHealth
         },
-        requires: "not mass-energy",
+        requires: "",
         effect() {
             tech.isPiezo = true;
         },
